@@ -63,6 +63,7 @@ class sortComparator implements Comparator<	Integer>{
 		if(freqCompare == 0) {
 			return valueCompare;
 		}
+		System.out.println('Manivel");
 		return freqCompare;
 	}
 	
