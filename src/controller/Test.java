@@ -48,6 +48,8 @@ public class Test {
 
 class sortComparator implements Comparator<	Integer>{
 	
+	
+	
 	private HashMap<Integer, Integer> freqMap;
 	
 	public sortComparator(HashMap<Integer, Integer> freqMap) {
@@ -55,6 +57,7 @@ class sortComparator implements Comparator<	Integer>{
 	}
 	@Override
 	public int compare(Integer k1, Integer k2) {
+		System.out.println();
 		int freqCompare = freqMap.get(k1).compareTo(freqMap.get(k2));
 		int valueCompare = k1.compareTo(k2);
 		if(freqCompare == 0) {
